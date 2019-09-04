@@ -1,0 +1,17 @@
+<?xml encoding="UTF-8" version="1.0"?> 
+<Response> 
+    <Result>
+        <Decision>Permit</Decision> 
+        <Obligations> 
+            <Obligation FulfillOn="Permit" obligationId="continue.simple"> 
+                <AttributeAssignment AttributeId="Policy:continue.simple"> 
+                    <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string"> 
+                        &lt;cixml version="1.0&gt;
+                            &lt;continue&gt;&lt;/continue&gt; 
+                        &lt;/cixml&gt; 
+                    </AttributeValue> 
+                </AttributeAssignment> 
+            </Obligation> 
+        </Obligations> 
+    </Result>
+</Response>

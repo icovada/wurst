@@ -16,7 +16,7 @@ def num2name(request):
         try:
             caller = Directory.objects.get(number=calldata['callingnumber'])
         except ObjectDoesNotExist:
-            return HttpResponse("Unknown")
+            return render(request, "nochange.xml")
 
         return HttpResponse(caller.name)
     else:
