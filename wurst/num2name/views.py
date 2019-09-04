@@ -18,6 +18,7 @@ def num2name(request):
         except ObjectDoesNotExist:
             return render(request, "nochange.xml")
 
-        return HttpResponse(caller.name)
+        data = {'callingname': caller.name}
+        return render(request, "changecaller.xml", data)
     else:
         return HttpResponseForbidden("You must send data with POST method")

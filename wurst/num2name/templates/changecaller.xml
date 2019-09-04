@@ -1,0 +1,19 @@
+<?xml encoding="UTF-8" version="1.0"?> 
+<Response>
+    <Result>
+        <Decision>Permit</Decision>
+        <Obligations>
+            <Obligation FulfillOn="Permit"ObligationId="urn:cisco:xacml:policy-attribute">
+                <AttributeAssignment AttributeId="Policy:simplecontinue"> 
+                    <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">
+                        &lt;cixml ver="1.0"&gt;
+                            &lt;continue&gt;
+                                &lt;modify callingname="{{callingname}}"/amp;gt;
+                            &lt;/continue&gt;
+                        &lt;/cixml&gt;
+                    </AttributeValue> 
+                 </AttributeAssignment>
+            </Obligation>
+        </Obligations>
+    </Result>
+</Response> 
