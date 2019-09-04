@@ -32,6 +32,7 @@ ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     'wurst.num2name',
+    'wurst.speeddial',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

@@ -19,4 +19,5 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('num2name/', include('wurst.num2name.urls')),
+    path('speeddial/', include('wurst.speeddial.urls')),
 ]
