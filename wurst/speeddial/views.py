@@ -21,5 +21,7 @@ def speeddial(request):
         data = {'calledname': speedy.name,
                 'callednumber': speedy.number}
         return render(request, "speeddialresponse.xml", data)
+    elif request.method == 'HEAD':
+        return HttpResponse()
     else:
         return HttpResponseForbidden("You must send data with POST method")

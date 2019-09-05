@@ -20,5 +20,7 @@ def num2name(request):
 
         data = {'callingname': caller.name}
         return render(request, "changecaller.xml", data)
+    elif request.method == 'HEAD':
+        return HttpResponse()
     else:
         return HttpResponseForbidden("You must send data with POST method")
