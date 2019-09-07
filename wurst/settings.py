@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'wurst.libs',
     'wurst.num2name',
     'wurst.speeddial',
     'django.contrib.admin',
