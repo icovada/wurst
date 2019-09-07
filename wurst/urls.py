@@ -20,4 +20,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('num2name/', include('wurst.num2name.urls')),
     path('speeddial/', include('wurst.speeddial.urls')),
+    path('accounts/', include('django.contrib.auth.urls')),
+    path('', include('wurst.wurst.urls'))
 ]
