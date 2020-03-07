@@ -1,19 +1,20 @@
-<?xml encoding="UTF-8" version="1.0"?> 
+<?xml encoding="UTF-8" version="1.0"?>
 <Response>
     <Result>
         <Decision>Permit</Decision>
+        <Status></Status>
         <Obligations>
-            <Obligation FulfillOn="Permit"ObligationId="urn:cisco:xacml:policy-attribute">
-                <AttributeAssignment AttributeId="Policy:simplecontinue"> 
+            <Obligation FulfillOn="Permit" ObligationId="urn:cisco:xacml:policy-attribute">
+                <AttributeAssignment AttributeId="Policy:simplecontinue">
                     <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">
-                        &lt;cixml ver="1.0"&gt;
+                        &lt;cixml version="1.0"&gt;
                             &lt;continue&gt;
-                                &lt;greeting identification={{ann_id}}/amp;gt;
+                                &lt;greeting identification={{ann_id}}&gt;
                             &lt;/continue&gt;
                         &lt;/cixml&gt;
-                    </AttributeValue> 
-                 </AttributeAssignment>
+                    </AttributeValue>
+                </AttributeAssignment>
             </Obligation>
         </Obligations>
     </Result>
-</Response> 
+</Response>
