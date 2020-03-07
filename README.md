@@ -8,6 +8,11 @@ Example: Add your customer's name to calls coming in from PSTN
 ### speedydial
 Transform a number into another
 Example: Assign a short code number to numbers you dial often.
+## Docker
+    docker-compose up
+
+Because ain't nobody got time fo dat.
+You can run the createsuperuser command invoking an interactive shell to the container
 ## Installation
 
     git clone git@github.com:icovada/wurst.git
