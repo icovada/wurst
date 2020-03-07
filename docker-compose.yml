@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+  db:
+    image: postgres
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    networks:
+      - inside
+    env_file:
+      - docker-files/db/.env
+
+  web:
+    build: 
+      context: wurstapp/.
+    depends_on:
+      - db
+    command: bash -c "/usr/src/app/entrypoint.sh && python manage.py makemigrations && python manage.py migrate && gunicorn --workers=3 wsgi -k gevent -b 0.0.0.0:8000"
+    ports:
+      - "8000:8000"
+    networks:
+      - inside
+    env_file:
+      - wurstapp/.env
+
+
+volumes:
+  postgres-data:
+
+networks:
+  inside:
