@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('num2name/', include('wurst.num2name.urls')),
     path('speeddial/', include('wurst.speeddial.urls')),
+    path('announcement/', include('wurst.announcement.urls')),
 ]
