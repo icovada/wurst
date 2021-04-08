@@ -1,6 +1,6 @@
 -i https://pypi.org/simple/
 asgiref==3.3.1
-django==3.1.6
+django==3.1.8
 gevent==1.4.0
 greenlet==1.0.0 ; platform_python_implementation == 'CPython'
 gunicorn==20.0.4
